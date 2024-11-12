@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    transition: background-color 0.3s, color 0.3s;
+}
+.light-mode {
+    background-color: #ffffff; /* Fundo branco */
+    color: #000; /* Texto preto */
+}
+.dark-mode {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+}
+.left-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* Fundo claro para destacar a imagem */
+    transition: background-color 0.3s;
+}
+.dark-mode .left-section {
+    background-color: #000000; /* Fundo escuro no modo dark */
+}
+.left-section img {
+    max-width: 80%;
+    height: auto;
+}
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.btn-custom-white, .btn-custom-blue {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 20px;
+    width: 300px;
+    margin: 10px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn-custom-white {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+}
+.btn-custom-white:hover {
+    background-color: #f5f5f5;
+}
+.dark-mode .btn-custom-white {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+}
+.btn-custom-blue {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+.btn-custom-blue:hover {
+    background-color: #0056b3;
+}
+footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.8rem;
+    text-align: center;
+    width: 100%;
+}
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+/* Botão da lua */
+.mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.dark-mode .mode-toggle {
+    color: #fff; /* Ícone da lua fica branco no modo escuro */
+}
