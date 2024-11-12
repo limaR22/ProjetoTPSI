@@ -165,13 +165,16 @@
             background-color: #333;
             color: #fff;
         }
+        .dark-mode .mode-toggle {
+            color: #fff; /* Ícone da lua fica branco no modo escuro */
+        }
     </style>
 </head>
 <body class="light-mode">
     <!-- Botões de topo -->
     <div class="top-buttons">
         <!-- Botão para voltar ao home -->
-        <a href="Home.html" class="back-home">Voltar para Home</a>
+        <a href="Home.html" class="back-home">Voltar</a>
 
         <!-- Botão para alternar tema -->
         <button class="mode-toggle" id="toggleMode">
@@ -186,11 +189,6 @@
         <!-- Botão para login com Google -->
         <button class="btn-custom-white">
             <i class="fab fa-google"></i> Fazer login com o Google
-        </button>
-
-        <!-- Botão para login com Apple -->
-        <button class="btn-custom-white">
-            <i class="fab fa-apple"></i> Entrar com Apple
         </button>
 
         <!-- Separador -->
